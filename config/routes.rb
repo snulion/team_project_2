@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'main/index'
-
+  get 'main/timetable'
+  get 'main/calendar'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

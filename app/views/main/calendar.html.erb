@@ -1,0 +1,42 @@
+<div class="month">
+  <ul>
+    <li class="prev">❮</li>
+    <li class="next">❯</li>
+    <li style="text-align:center">
+    August<br>
+    <span style="font-size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+<ul class="weekdays">
+  <li>월</li>
+  <li>화</li>
+  <li>수</li>
+  <li>목</li>
+  <li>금</li>
+  <li>토</li>
+  <li>일</li>
+</ul>
+
+<ul class="days">
+<% 30.times do |t|%>
+  <li class="day" data-state=false data-date="<%=t+1%>"><%= t+1 %></li>
+<% end %>
+</ul>
+<script>
+  $( document ).ready(function() {
+  $(".day").click(function(){
+  if(!$(this).data('state')){
+  $(this).empty();
+  $(this).append('<span class="active">'+$(this).data('date')+'</span>');
+  $(this).data('state',true);
+  }
+  else{
+  $(this).empty();
+  $(this).append($(this).data('date'));
+  $(this).data('state',false);
+  }
+  })
+  });
+</script>
+
