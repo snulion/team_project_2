@@ -1,10 +1,28 @@
 <div class="container">
+  <!-- 현재 상영중인 영화 10개 포스터 형태로 구현 -->
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="page-header">현재 상영작</h2>
+    </div>
 
-    <!-- Team Members -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">현재 상영작</h2>
+    <ul class="list-inline">
+    <!-- 루프문 10번 시작 -->
+    <% @currentmovies.each do |movie| %>     <!-- 현재는 모든 영화에 대해 루프. 나중에 10번으로 제한할 것 -->
+      <!-- 영화 1개 -->
+      <li class="col-md-3 col-sm-3 text-center">
+        <div class="thumbnail">
+          <img class="img-responsive" src="<%= movie.image_mainposter %>" alt="<%= movie.name %>">
+          <div class="caption">
+            <h3><%= movie.name %><br>
+                <small>★☆☆☆☆</small>
+            </h3>
+            <p>멘트공간</p>
+          </div>
         </div>
+      </li>
+    <% end %>
+    <!-- 루프문 10번 끝 -->
+    </ul>
         <div class="col-md-3 col-sm-3 text-center">
             <div class="thumbnail">
                 <img class="img-responsive" src="http://placehold.it/450x600" alt="">

@@ -19,8 +19,9 @@ ActiveRecord::Schema.define(version: 20160623092722) do
     t.integer  "rate_star"
     t.integer  "rate_ppl"
     t.text     "etc"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "image_mainposter"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "screen_times", force: :cascade do |t|
