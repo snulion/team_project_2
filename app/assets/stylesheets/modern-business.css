@@ -23,6 +23,25 @@ body {
     opacity: 0.8;
 }
 
+
+/* 예매하기 */
+
+#reservation > .col-lg-12 {
+    padding: 0;
+}
+
+#reservation > .col-xs-4 {
+    padding: 0;
+    height: 400px;
+    overflow-y:scroll;
+}
+
+.no-border {
+    text-align: center;
+    border-color: #fff !important;
+}
+
+
 /* Home Page Carousel */
 
 header.carousel {

@@ -14,5 +14,8 @@ class MainController < ApplicationController
       format.js
     end
   end
+  
+  def reservation
+  end
 
 end

@@ -13,21 +13,23 @@
  *= require_tree .
  *= require_self
  */
-body { font-family: arial; } th,td { margin: 0; text-align: center; border-collapse: collapse; outline: 1px solid #e3e3e3; } td { padding: 5px 10px; } th
+.timetable th,td { margin: 0; text-align: center; border-collapse: collapse; outline: 1px solid #e3e3e3; } 
+.timetable td { padding: 5px 10px; } 
+th
 {
   background: #666;
   color: white;
   padding: 5px 10px;
 }
 
-td:hover
+.timetable td:hover
 {
   cursor: pointer;
   background: #666;
   color: white;
 }
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+
+.calendar ul {list-style-type: none;}
 
 /* Month header */
 .month {
